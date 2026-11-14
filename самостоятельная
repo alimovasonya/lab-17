@@ -24,23 +24,23 @@ int main(void) {
     int n1 = 5;
     sort_descending(a1, n1);
     for (int i = 0; i < n1; i++) printf("%d ", a1[i]);
-    printf("; проверка %d\n", is_descending(a1, n1));
+    printf("; %d\n", is_descending(a1, n1));
 
     int a2[] = {5};
     int n2 = 1;
     sort_descending(a2, n2);
     for (int i = 0; i < n2; i++) printf("%d ", a2[i]);
-    printf("; проверка %d\n", is_descending(a2, n2));
+    printf("; %d\n", is_descending(a2, n2));
 
     int a3[] = {3, 1, 2};
     int n3 = 3;
-    printf("Проверка без сортировки 3 1 2: %d\n", is_descending(a3, n3));
+    printf("%d\n", is_descending(a3, n3));
 
     int a4[] = {2, 2, 2};
     int n4 = 3;
     sort_descending(a4, n4);
     for (int i = 0; i < n4; i++) printf("%d ", a4[i]);
-    printf("; свой тест (равные элементы), проверка %d\n", is_descending(a4, n4));
+    printf("; %d\n", is_descending(a4, n4));
 
     return 0;
 }
